@@ -365,6 +365,8 @@ public class CameraConnectionFragment extends Fragment {
                 if (num_facing_back_camera != null && num_facing_back_camera > 0) {
                     // We don't use a front facing camera in this sample if there are other camera device facing types
                     if (facing != null ) {
+                        //change to use front camera
+                        //if( facing == CameraCharacteristics.LENS_FACING_FRONT ){
                         if( facing != CameraCharacteristics.LENS_FACING_FRONT ){
                             continue;
                         }                        

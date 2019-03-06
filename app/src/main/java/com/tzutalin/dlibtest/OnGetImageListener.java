@@ -119,6 +119,7 @@ public class OnGetImageListener implements OnImageAvailableListener {
             orientation = Configuration.ORIENTATION_LANDSCAPE;
             mScreenRotation = 0;
         }
+        // force small camera preview rotate 270
         mScreenRotation = 270;
 
         Assert.assertEquals(dst.getWidth(), dst.getHeight());
